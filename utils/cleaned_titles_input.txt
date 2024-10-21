@@ -1,0 +1,131 @@
+Caulobacter crescentus
+Porphyromonas gingivalis
+Escherichia coli
+Helicobacter pylori
+Agrobacterium tumefaciens
+Shewanella oneidensis
+Pseudomonas aeruginosa
+Myxococcus xanthus
+Vibrio cholerae
+HUVECs
+Acetonema longum
+Mycoplasma pneumoniae
+Coxiella burnetii Nine Mile phase II clone 4
+Vibrio cholerae O1 biovar El Tor 686
+Escherichia coli
+Bdellovibrio bacteriovorus
+Escherichia coli in vitro
+Rhodobacter sphaeroides ATCC
+HeLa cells ATCC
+Xanthomonas citri pv citri
+MEF cells
+Cos7 Cos7 cells
+Rat Hippocampal Neuron
+Magnetospirillum magneticum
+Bacillus subtilis
+Caulobacter phage cbK
+HIV and deltaNef
+Caulobacter crescentus CpaE-YFP
+Caulobacter crescentus
+Caulobacter crescentus
+Rat INS-1E pancreatic beta cells
+Sulfolobus solfataricus P2 
+Magnetospirillum magneticum
+Vibrio cholerae
+"Bdellovibrio bacteriovorus
+Caulobacter crescentus
+HIV cores
+Thermococcus kodakarensis
+Caulobacter crescentus
+Azospirillum brasilense 
+Halobacterium salinarum
+Hela cells expressing TRIM5a-YFP
+U2OS
+Proteus mirabilis HI4320
+Schizosaccharomyces pombe
+Drp1
+Vibrio cholerae 
+Caulobacter crescentus PodJ-YFP
+Gluconacetobacter hansenii ATCC
+Clostridium thermocellum
+INS-1E Pancreatic Cells expressing Calreticulin-YFP
+Caulobacter crescentus pMT335-CpaD-mCherry
+Murine embryonic fibroblast (MEFs)
+MLV
+Mycobacterium marinum
+Escherichia coli MG1655 sacculi
+Bradyrhizobium diazoefficiens
+Nitrosopumilus maritimus
+Pseudoalteromonas luteoviolacea
+Arabidopsis thaliana Col-0
+Jurkat Human T-cell Clone E6-1
+Treponema primitia ZAS-2
+Candidatus Saccharibacteria TM7
+Sulfolobus acidocaldarius
+Enterobacter cloacae
+Halothiobacillus neapolitanus
+Vibrio cholerae SAD2112
+Escherichia coli NR1769 pKM101
+Escherichia coli
+Allium cepa
+Escherichia coli
+Bdellovibrio bacteriovorus 
+INS-1E Pancreatic Cells expressing Chromogranin A GFP
+Bacillus megaterium
+Mesoplasma florum
+Vibrio harveyi
+Parachlamydia acanthamoebae UV-7 765952
+Macrophage lysate
+Streptomyces albus
+Delftia acidovorans
+Streptomyces venezuelae
+mitochondria
+Brucella abortus
+Chloroflexi
+Delftia acidovorans Cs1-4 delta-npdA
+Halohasta litchfieldiae tADL
+Listeria monocytogenes
+Methyloprofundus sedimenti
+Methanoregula formicica
+Amoebophilus asiaticus
+Pseudomonas fluorescens Pf0-1
+Haloarcula argentinensis
+Natrialba asiatica
+Hyphomicrobium facile
+Protochlamydia amoebophila
+HIV-1 pseudovirus
+Sulfolobus solfataricus
+Pelosinus fermentans
+Methylomicrobium alcaliphilum 
+Sporanaerobacter acetigenes
+Candidatus Nitrosocaldus yellowstonensis
+Vibrio cholerae
+Bacteroidetes
+Primary adipocyte cells
+Halomicrobium mukohataei
+Hela cells expressing TRIM5a-YFP infected 
+Methanobacterium formicicum
+Halorubrum litoreum
+Methanosarcina acetivorans
+Haloferax gibbonsii
+Acidaminococcus fermentans
+Gluconacetobacter xylinus JCM
+Symbiodinium
+Prosthecobacter dejongeii
+Bacillus subtilis
+Rhesus Macaque Fibroblasts infected with Vpr-Ruby HIV-1
+Escherichia coli
+U2OS cells TDP-43
+Opitutus terrae DSM
+Veillonella parvula
+Flavobacterium johnsoniae
+Desulfovibrio carbinolicus
+Rhodobacter capsulatus gene transfer agent
+Sinorhizobium meliloti
+INS-1E Pancreatic Cells expressing Sec61-GFP
+Selenomonas
+Cell line 25 RFP-LC3
+Methanospirillum hungatei
+Escherichia coli
+DNAorigami
+ForPrzemek

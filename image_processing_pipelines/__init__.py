@@ -1,0 +1,2 @@
+from image_processing_pipelines.image_pipeline import ImagePipeline
+from image_processing_pipelines.threshold_and_cluster import ThresholdClusterPipeline
