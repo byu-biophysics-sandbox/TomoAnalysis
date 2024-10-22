@@ -1,0 +1,10 @@
+__pycache__/
+*.csv
+
+*.pth
+segmentation_images/
+*.png
+core.*
+*.onnx
+*.mp4
+*.jpg
