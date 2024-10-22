@@ -54,6 +54,7 @@ def min_max_normalize(array):
     normalized_array = (array - min_val) / (max_val - min_val)
     return normalized_array
 
+
 def histogram_equalization_3d(image):
     """
     Apply histogram equalization to a 3D array.
@@ -78,6 +79,65 @@ def histogram_equalization_3d(image):
     image_equalized = image_equalized.reshape(image.shape)
     
     return image_equalized
+
+# def select_ranked_dark_group(array_3d, percentile=20, rank=1, connectivity=2):
+#     """
+#     Normalizes the 3D array, then selects a specific group of dark values based on size ranking.
+
+#     Parameters:
+#         array_3d (np.ndarray): The input 3D array.
+#         percentile (float): The percentile below which values are considered dark, after normalization.
+#         rank (int): The rank of the group to return based on size (1 for largest, 2 for second largest, etc.).
+#         connectivity (int): The connectivity criterion (1 for direct neighbors, 2 for diagonal neighbors).
+
+#     Returns:
+#         ranked_group_mask (np.ndarray): A binary mask of the same shape as array_3d, where the ranked dark group is marked as 1.
+#         ranked_group_size (int): The size of the ranked dark group.
+#         normalized_array (np.ndarray): The normalized array with values in the range [0, 1].
+#     """
+#     # Normalize the array to the range [0, 1]
+#     array_min = np.min(array_3d)
+#     array_max = np.max(array_3d)
+    
+#     # Prevent division by zero in case all values are the same
+#     if array_max - array_min != 0:
+#         normalized_array = (array_3d - array_min) / (array_max - array_min)
+#     else:
+#         normalized_array = np.zeros_like(array_3d)
+
+#     # Calculate the dynamic threshold based on the specified percentile
+#     threshold = np.percentile(normalized_array, percentile)
+
+#     # Create a binary mask where normalized values below the threshold are marked as 1, others as 0
+#     dark_values_mask = normalized_array < threshold
+
+#     # Label connected components in the binary mask
+#     labeled_array, num_features = label(dark_values_mask, structure=np.ones((3, 3, 3)) if connectivity == 2 else None)
+
+#     if num_features == 0:
+#         print("No dark-value groups found.")
+#         return np.zeros_like(array_3d), 0, normalized_array  # Return an empty mask if no groups are found
+
+#     # Find all group sizes by counting occurrences of each label
+#     label_counts = np.bincount(labeled_array.flat)
+
+#     # Exclude the background label (index 0) and sort groups by size in descending order
+#     sorted_labels_and_sizes = sorted(enumerate(label_counts[1:], start=1), key=lambda x: x[1], reverse=True)
+
+#     if rank > len(sorted_labels_and_sizes):
+#         print(f"Rank {rank} exceeds the number of detected groups. Returning an empty mask.")
+#         return np.zeros_like(array_3d), 0, normalized_array  # Return an empty mask if rank is out of bounds
+
+#     # Get the label for the specified rank
+#     ranked_group_label, ranked_group_size = sorted_labels_and_sizes[rank - 1]
+
+#     # Create a mask for the ranked group
+#     ranked_group_mask = labeled_array == ranked_group_label
+
+#     return ranked_group_mask
+
+import numpy as np
+from scipy.ndimage import label
 
 def select_ranked_dark_group(array_3d, percentile=20, rank=1, connectivity=2):
     """
@@ -176,3 +236,4 @@ def downsample_3d_average(image_3d, factor):
     downsampled = reshaped.mean(axis=(1, 3, 5))
     
     return downsampled
+
