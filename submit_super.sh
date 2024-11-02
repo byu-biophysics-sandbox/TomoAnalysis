@@ -6,6 +6,7 @@
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
+##salloc --time=01:00:00 --ntasks=1 --nodes=1 --gpus=1 --qos=standby --mem=25G
 
 # some helpful debugging options
 module load miniconda3
