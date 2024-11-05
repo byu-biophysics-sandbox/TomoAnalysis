@@ -1,17 +1,17 @@
 from writers import SegmentationSaver
 from analyzers import BacteriaSegmenter
-from datasets import TomographySlices
+from datasets import TomographyArray
 from utils.data_factory import DataFactory
 from image_processing_pipelines import ThresholdClusterPipeline
 import os
 
 if "TOMOGRAM_PATH" not in os.environ.keys():
-    os.environ["TOMOGRAM_PATH"] = "/home/matiasgp/groups/grp_tomo_db1_d3/nobackup/archive/TomoDB1_d3/Hneptunium_secretin/aba2006-11-01-6/Hyphomonas_10bin_full.rec"
+    os.environ["TOMOGRAM_PATH"] = "/home/matiasgp/groups/grp_tomo_db1_d3/nobackup/archive/TomoDB1_d3/"
 
 def main():
     # Sets up a tomography to pull slices from
     print("Compiling Dataset...")
-    data = TomographySlices(os.environ["TOMOGRAM_PATH"])
+    data = TomographyArray(os.environ["TOMOGRAM_PATH"])
 
     print("Setting up Analysis Pipeline...")
     # Sets up a segmentation pipeline
@@ -25,7 +25,7 @@ def main():
     writer = SegmentationSaver(data.bacteria_name)
     
     print("Configuring Processor...")
-    batch_size = 1
+    batch_size = 2
     data_factory = DataFactory(
         analyzer,
         writer,

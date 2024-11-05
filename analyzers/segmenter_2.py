@@ -127,8 +127,6 @@ class BacteriaSegmenter(Analysis):
             coords,
             labels,
         ):
-        
-        
         predictor = SamPredictor(self.sam)
         predictor.set_image(bacteria)
         image_embedding = predictor.get_image_embedding().cpu().numpy()
